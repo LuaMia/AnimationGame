@@ -1,3 +1,3 @@
 # AnimationGame
 Inf15/16
-a
+Java will nur spielen
