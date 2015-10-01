@@ -66,4 +66,7 @@ public class GeometricObject {
 		return this.area() > that.area();
 	}
 
+	public void moveTo(Vertex pos){
+		this.pos = pos;
+	}
 }
