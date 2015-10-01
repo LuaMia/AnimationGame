@@ -69,4 +69,6 @@ public class GeometricObject {
 	public void moveTo(Vertex pos){
 		this.pos = pos;
 	}
+	
+	
 }
