@@ -19,6 +19,10 @@ public class GeometricObject {
 		return pos;
 	}
 	
+	public String toString(){
+		return  this.width+ "," +this.height+","+this.pos;
+	}
+	
 	public GeometricObject(double w, double h, Vertex poss){
 		pos = poss;
 		width = w;

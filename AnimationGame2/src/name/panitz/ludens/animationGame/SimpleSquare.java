@@ -17,5 +17,6 @@ public class SimpleSquare extends GeometricObject{
 	public @Override boolean equals(Object that){
 		return (that instanceof SimpleSquare) && super.equals(that);
 	}
-
+	
+	
 }
