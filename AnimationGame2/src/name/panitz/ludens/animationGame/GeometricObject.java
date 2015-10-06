@@ -69,5 +69,35 @@ public class GeometricObject {
 	public void moveTo(Vertex pos){
 		this.pos = pos;
 	}
+	
+	public void move(Vertex v){
+		moveTo(pos.add(v));
+	}
+	
+	public boolean equals(Object thatObject){
+		if (thatObject instanceof GeometricObject){
+			GeometricObject that = (GeometricObject)thatObject;
+			return that.width == this.width && 
+					that.height == this.height && 
+					this.pos.equals(that.pos);
+		}
+		return false;
+	}
+	
+	public boolean touch (GeometricObject thatObject){
+		double x1 = this.pos.getX();
+		double x2 = thatObject.pos.getX();
+		double y1 = this.pos.getY();
+		double y2 = thatObject.pos.getY();
+		if ((x1>=x2 && x1 <=x2+thatObject.width ||
+				x1+this.height >= x2 && x1+this.height <= x2+thatObject.height)
+				&&
+				(y1>=y2 && x1 <=y2+thatObject.height ||
+				y1+this.width >= y2 && y1+this.width <= y2+thatObject.width)){
+			return true;
+		}
+		return false;
+	}
 		
 }
+
