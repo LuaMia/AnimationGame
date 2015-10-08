@@ -23,9 +23,9 @@ public class SizedPanel extends JPanel {
 	
 	public static void main(String [] args){
 		JFrame frame = new JFrame("hallo");
-		frame.setBounds(20, 20, 200, 200);
-		FirstPanel panel = new FirstPanel();
-		frame.add(panel);
+		frame.setBounds(200,20,200,200);
+		//SizedPanel panel = new SizedPanel();
+		//frame.add(panel);
 		frame.setVisible(true);
 	}
 }
