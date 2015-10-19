@@ -1,11 +1,14 @@
 package name.panitz.ludens.animationGame;
 
+import java.awt.Color;
+
 import name.panitz.ludens.animationGame.Vertex;
 
 public class GeometricObject {
 	public Vertex pos;
 	public double width;
 	public double height;
+	public Color c = new Color(0,0,0);
 	
 	public double getWidth(){
 		return width;

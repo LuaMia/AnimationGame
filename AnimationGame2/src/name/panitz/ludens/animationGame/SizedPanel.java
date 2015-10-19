@@ -6,26 +6,22 @@ import name.panitz.ludens.animationGame.ShowInFrame;
 
 public class SizedPanel extends JPanel {
 
-	int prefferedWidth = 400;
-	int prefferedHeight = 300;
+	int preferredWidth = 400;
+	int preferredHeight = 300;
 	
 	public SizedPanel(int w, int h){
-		prefferedWidth = w;
-		prefferedHeight = h;
+		this.preferredWidth = w;
+		this.preferredHeight = h;
 	}
 	
 	public SizedPanel(){}
 	
 
-	public Dimension getPrefferedSize(){
-		return new Dimension(prefferedWidth, prefferedHeight);
+	@Override public Dimension getPreferredSize(){
+		return new Dimension(preferredWidth, preferredHeight);
 	}
 	
 	public static void main(String [] args){
-		JFrame frame = new JFrame("hallo");
-		frame.setBounds(200,20,200,200);
-		//SizedPanel panel = new SizedPanel();
-		//frame.add(panel);
-		frame.setVisible(true);
+		ShowInFrame.show(new SizedPanel());
 	}
 }

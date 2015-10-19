@@ -26,7 +26,7 @@ public class TestVertex {
 		System.out.println(o1.contains(v1));
 		
 		SimpleOval so1 = new SimpleOval(1,2,v1);
-		SimpleRectangular sr1 = new SimpleRectangular(1,2,v1);
+		SimpleRectangle sr1 = new SimpleRectangle(1,2,v1);
 		System.out.println(so1.toString());
 		System.out.println(sr1.area());
 

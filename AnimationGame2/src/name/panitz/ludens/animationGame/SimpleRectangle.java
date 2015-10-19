@@ -1,8 +1,8 @@
 package name.panitz.ludens.animationGame;
 
-public class SimpleRectangular extends GeometricObject {
+public class SimpleRectangle extends GeometricObject {
 
-	public SimpleRectangular(double w,double h, Vertex pos){
+	public SimpleRectangle(double w,double h, Vertex pos){
 		super(w,h,pos);
 	}
 	
@@ -15,6 +15,6 @@ public class SimpleRectangular extends GeometricObject {
 	}
 
 	public @Override boolean equals(Object that){
-		return (that instanceof SimpleRectangular) && super.equals(that);
+		return (that instanceof SimpleRectangle) && super.equals(that);
 	}
 }
